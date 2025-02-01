@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 
+           dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 
+           min-h-screen transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .letter-card {
+    @apply relative overflow-hidden rounded-2xl shadow-lg 
+           hover:shadow-xl transform hover:-translate-y-1 
+           transition-all duration-300
+           bg-white dark:bg-gray-800
+           dark:shadow-gray-900/30;
+  }
+
+  .letter-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br 
+           from-purple-400/10 to-pink-400/10 
+           dark:from-purple-400/5 dark:to-pink-400/5 
+           opacity-0 transition-opacity duration-300;
+  }
+
+  .letter-card:hover::before {
+    @apply opacity-100;
+  }
+
+  .nav-button {
+    @apply px-6 py-3 text-lg font-semibold rounded-2xl 
+           transition-all duration-300 transform hover:scale-105;
+  }
+
+  .nav-button-active {
+    @apply bg-gradient-to-r from-primary-light to-secondary-light 
+           dark:from-primary-dark dark:to-secondary-dark 
+           text-white shadow-lg;
+  }
+
+  .nav-button-inactive {
+    @apply bg-white dark:bg-gray-800 
+           text-gray-700 dark:text-gray-200 
+           hover:bg-gray-50 dark:hover:bg-gray-700 
+           shadow-md;
+  }
+
+  .content-card {
+    @apply bg-white/80 dark:bg-gray-800/80 
+           backdrop-blur-sm rounded-3xl shadow-xl 
+           dark:shadow-gray-900/30;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r 
+           from-primary-light to-secondary-light
+           dark:from-primary-dark dark:to-secondary-dark;
+  }
+}
