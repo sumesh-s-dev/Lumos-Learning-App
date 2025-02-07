@@ -114,9 +114,9 @@ Contributions are welcome! Here's how you can help:
 
 ## **Contact**
 **Manikandan M**  
-Email: mmanikandan281@gmail.com
+Email: sumesh2003nov5@gmail.com
 
-GitHub: [Manikandan-M](https://github.com/mmanikandan281)  
+GitHub: [S SUMESH](https://github.com/sumesh-s-dev)  
 
 ---
 
