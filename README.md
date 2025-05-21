@@ -113,7 +113,7 @@ Contributions are welcome! Here's how you can help:
 ---
 
 ## **Contact**
-**Manikandan M**  
+**S SUMESH**  
 Email: sumesh2003nov5@gmail.com
 
 GitHub: [S SUMESH](https://github.com/sumesh-s-dev)  
