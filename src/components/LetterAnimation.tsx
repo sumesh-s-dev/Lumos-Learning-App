@@ -5,10 +5,10 @@ interface LetterAnimationProps {
   letter: string;
   isPlaying: boolean;
   speed: number;
-  drawProgress: number;
+  drawProgress?: number;
 }
 
-const LetterAnimation = ({ letter, isPlaying, speed, drawProgress }: LetterAnimationProps) => {
+const LetterAnimation = ({ letter, isPlaying, speed, drawProgress = 1 }: LetterAnimationProps) => {
   // Get SVG path for the letter
   const getLetterPath = (letter: string) => {
     const paths: { [key: string]: string } = {

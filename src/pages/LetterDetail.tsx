@@ -12,7 +12,6 @@ const LetterDetail = () => {
   const navigate = useNavigate();
   const [isPlaying, setIsPlaying] = useState(true);
   const [speed, setSpeed] = useState(1);
-  const [drawProgress, setDrawProgress] = useState(0);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const handlePrevious = () => {
@@ -48,7 +47,6 @@ const LetterDetail = () => {
             letter={letter}
             isPlaying={isPlaying}
             speed={speed}
-            drawProgress={drawProgress}
           />
 
           <div>
